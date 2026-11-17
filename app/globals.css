@@ -6,116 +6,297 @@
    JSX-də className="btn btn-primary" kimi istifadə olunur. */
 
 @layer base {
-  body { @apply bg-bg font-sans text-white antialiased; }
+  body {
+    @apply bg-bg font-sans text-white antialiased;
+  }
 }
 
 @layer components {
   /* Ümumi */
-  .img-fill { @apply absolute inset-0 h-full w-full object-cover; }
-  .star { @apply text-star; }
-  .age-badge, .hero-tag { @apply inline-block rounded border border-zinc-600 bg-black/50 px-2 py-0.5 text-xs text-gray-300; }
-  .btn { @apply inline-flex items-center gap-2 rounded-md border border-transparent px-5 py-2.5 font-semibold text-white transition hover:brightness-110; }
-  .btn-primary { @apply bg-brand; }
-  .btn-outline { @apply border-white/50; }
-  .movie-card-meta { @apply mt-1 text-[13px] text-gray-400; }
+  .img-fill {
+    @apply absolute inset-0 h-full w-full object-cover;
+  }
+  .star {
+    @apply text-star;
+  }
+  .age-badge,
+  .hero-tag {
+    @apply inline-block rounded border border-zinc-600 bg-black/50 px-2 py-0.5 text-xs text-gray-300;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-md border border-transparent px-5 py-2.5 font-semibold text-white transition hover:brightness-110;
+  }
+  .btn-primary {
+    @apply bg-brand;
+  }
+  .btn-outline {
+    @apply border-white/50;
+  }
+  .movie-card-meta {
+    @apply mt-1 text-[13px] text-gray-400;
+  }
 
   /* Navbar */
-  .navbar { @apply fixed inset-x-0 top-0 z-50 flex items-center justify-between px-[5%] py-5 transition-colors duration-300; }
-  .navbar.is-scrolled { @apply bg-bg/95 shadow-lg; }
-  .logo { @apply flex items-center gap-2 text-xl font-bold; }
-  .logo-mark { @apply rounded border border-brand px-1 text-sm text-brand; }
-  .nav-links { @apply flex gap-7; }
-  .nav-link { @apply text-gray-300 hover:text-white; }
-  .nav-link.is-active { @apply font-bold text-brand; }
-  .nav-actions { @apply flex items-center gap-3; }
-  .icon-btn { @apply bg-transparent text-xl text-white; }
-  .burger { @apply hidden bg-transparent text-xl text-white; }
+  .navbar {
+    @apply fixed inset-x-0 top-0 z-50 flex items-center justify-between px-[5%] py-5 transition-colors duration-300;
+  }
+  .navbar.is-scrolled {
+    @apply bg-bg/95 shadow-lg;
+  }
+  .logo {
+    @apply flex items-center gap-2 text-xl font-bold;
+  }
+  .logo-mark {
+    @apply rounded border border-brand px-1 text-sm text-brand;
+  }
+  .nav-links {
+    @apply flex gap-7;
+  }
+  .nav-link {
+    @apply text-gray-300 hover:text-white;
+  }
+  .nav-link.is-active {
+    @apply font-bold text-brand;
+  }
+  .nav-actions {
+    @apply flex items-center gap-3;
+  }
+  .icon-btn {
+    @apply bg-transparent text-xl text-white;
+  }
+  .burger {
+    @apply hidden bg-transparent text-xl text-white;
+  }
 
   /* Hero */
-  .hero { @apply relative flex h-[80vh] min-h-[460px] items-end overflow-hidden; }
-  .hero-overlay { @apply absolute inset-0; background: linear-gradient(to top, #0b0c0f 5%, transparent 60%), linear-gradient(to right, rgba(11, 12, 15, 0.85), transparent 60%); }
-  .hero-content { @apply relative z-10 mb-20 flex max-w-xl flex-col gap-3 px-[5%]; }
-  .hero-title { @apply text-4xl font-bold md:text-5xl; }
-  .hero-meta { @apply text-sm text-gray-400; }
-  .hero-desc { @apply text-sm leading-relaxed text-gray-300; }
-  .hero-actions { @apply mt-2 flex flex-wrap gap-3; }
-  .dots { @apply absolute bottom-10 right-[5%] z-10 flex gap-2; }
-  .dot { @apply h-2.5 w-2.5 rounded-full bg-white/40; }
-  .dot.is-active { @apply bg-white; }
+  .hero {
+    @apply relative flex h-[80vh] min-h-[460px] items-end overflow-hidden;
+  }
+  .hero-overlay {
+    @apply absolute inset-0;
+    background:
+      linear-gradient(to top, #0b0c0f 5%, transparent 60%),
+      linear-gradient(to right, rgba(11, 12, 15, 0.85), transparent 60%);
+  }
+  .hero-content {
+    @apply relative z-10 mb-20 flex max-w-xl flex-col gap-3 px-[5%];
+  }
+  .hero-title {
+    @apply text-4xl font-bold md:text-5xl;
+  }
+  .hero-meta {
+    @apply text-sm text-gray-400;
+  }
+  .hero-desc {
+    @apply text-sm leading-relaxed text-gray-300;
+  }
+  .hero-actions {
+    @apply mt-2 flex flex-wrap gap-3;
+  }
+  .dots {
+    @apply absolute bottom-10 right-[5%] z-10 flex gap-2;
+  }
+  .dot {
+    @apply h-2.5 w-2.5 rounded-full bg-white/40;
+  }
+  .dot.is-active {
+    @apply bg-white;
+  }
 
   /* Platformalar */
-  .platform-section { @apply flex items-center gap-3 px-[5%] py-10; }
-  .platform-row { @apply flex-1; }
-  .platform-tile { @apply relative h-[110px] w-[200px] flex-none overflow-hidden rounded-lg bg-surface; }
-  .platform-logo { @apply object-contain p-6; }
+  .platform-section {
+    @apply flex items-center gap-3 px-[5%] py-10;
+  }
+  .platform-row {
+    @apply flex-1;
+  }
+  .platform-tile {
+    @apply relative h-[110px] w-[200px] flex-none overflow-hidden rounded-lg bg-surface;
+  }
+  .platform-logo {
+    @apply object-contain p-6;
+  }
 
   /* Ümumi sıra və bölmə */
-  .section { @apply px-[5%] pb-5 pt-10; }
-  .section-header { @apply mb-4 flex items-center justify-between gap-3; }
-  .section-title { @apply text-[22px] font-bold; }
-  .row { @apply flex gap-4 overflow-x-auto scroll-smooth; scrollbar-width: none; }
-  .row::-webkit-scrollbar { display: none; }
-  .card-item { @apply w-[220px] flex-none; }
-  .arrows { @apply flex gap-2; }
-  .arrow-btn { @apply h-10 w-10 flex-none rounded-full border border-white/30 bg-black/50 text-[22px] leading-none text-white hover:border-brand hover:bg-brand; }
-  .arrow-btn.is-hidden { @apply invisible; }
+  .section {
+    @apply px-[5%] pb-5 pt-10;
+  }
+  .section-header {
+    @apply mb-4 flex items-center justify-between gap-3;
+  }
+  .section-title {
+    @apply text-[22px] font-bold;
+  }
+  .row {
+    @apply flex gap-4 overflow-x-auto scroll-smooth;
+    scrollbar-width: none;
+  }
+  .row::-webkit-scrollbar {
+    display: none;
+  }
+  .card-item {
+    @apply w-[220px] flex-none;
+  }
+  .arrows {
+    @apply flex gap-2;
+  }
+  .arrow-btn {
+    @apply h-10 w-10 flex-none rounded-full border border-white/30 bg-black/50 text-[22px] leading-none text-white hover:border-brand hover:bg-brand;
+  }
+  .arrow-btn.is-hidden {
+    @apply invisible;
+  }
 
   /* Film kartı */
-  .movie-card { @apply cursor-pointer transition-transform duration-300 hover:scale-105; }
-  .movie-card-poster { @apply relative aspect-[2/3] overflow-hidden rounded-xl bg-surface; }
-  .movie-card.is-selected .movie-card-poster { @apply ring-[3px] ring-brand; }
-  .movie-card-info { @apply pt-2.5; }
-  .movie-card-title { @apply overflow-hidden text-ellipsis whitespace-nowrap text-[15px] font-semibold; }
+  .movie-card {
+    @apply cursor-pointer transition-transform duration-300 hover:scale-105;
+  }
+  .movie-card-poster {
+    @apply relative aspect-[2/3] overflow-hidden rounded-xl bg-surface;
+  }
+  .movie-card.is-selected .movie-card-poster {
+    @apply ring-[3px] ring-brand;
+  }
+  .movie-card-info {
+    @apply pt-2.5;
+  }
+  .movie-card-title {
+    @apply overflow-hidden text-ellipsis whitespace-nowrap text-[15px] font-semibold;
+  }
 
   /* Popular of the week */
-  .popular-item { @apply flex w-[380px] flex-none items-center gap-3.5; }
-  .popular-rank { @apply min-w-[48px] text-[72px] font-extrabold leading-none; }
-  .popular-poster { @apply relative aspect-[2/3] w-[90px] flex-none overflow-hidden rounded-md bg-surface; }
-  .popular-info { @apply flex min-w-0 flex-col gap-1; }
-  .popular-info h3 { @apply text-[15px] font-semibold; }
+  .popular-item {
+    @apply flex w-[380px] flex-none items-center gap-3.5;
+  }
+  .popular-rank {
+    @apply min-w-[48px] text-[72px] font-extrabold leading-none;
+  }
+  .popular-poster {
+    @apply relative aspect-[2/3] w-[90px] flex-none overflow-hidden rounded-md bg-surface;
+  }
+  .popular-info {
+    @apply flex min-w-0 flex-col gap-1;
+  }
+  .popular-info h3 {
+    @apply text-[15px] font-semibold;
+  }
 
   /* Featured */
-  .featured { @apply relative grid min-h-[520px] grid-cols-1 items-center gap-10 overflow-hidden px-[5%] py-16 lg:grid-cols-[1fr_1.6fr]; }
-  .featured-bg { @apply opacity-30; }
-  .featured-left, .featured-cards { @apply relative z-10; }
-  .featured-left { @apply flex max-w-xl flex-col gap-2.5; }
-  .featured-title { @apply text-[22px] font-bold; }
-  .featured-subtitle { @apply text-gray-400; }
-  .featured-movie { @apply text-3xl font-bold; }
-  .featured-desc { @apply text-sm leading-relaxed text-gray-300; }
-  .featured-desc:not(.is-expanded) { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
-  .read-more { @apply self-start bg-transparent p-0 font-semibold text-brand; }
+  .featured {
+    @apply relative grid min-h-[520px] grid-cols-1 items-center gap-10 overflow-hidden px-[5%] py-16 lg:grid-cols-[1fr_1.6fr];
+  }
+  .featured-bg {
+    @apply opacity-30;
+  }
+  .featured-left,
+  .featured-cards {
+    @apply relative z-10;
+  }
+  .featured-left {
+    @apply flex max-w-xl flex-col gap-2.5;
+  }
+  .featured-title {
+    @apply text-[22px] font-bold;
+  }
+  .featured-subtitle {
+    @apply text-gray-400;
+  }
+  .featured-movie {
+    @apply text-3xl font-bold;
+  }
+  .featured-desc {
+    @apply text-sm leading-relaxed text-gray-300;
+  }
+  .featured-desc:not(.is-expanded) {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .read-more {
+    @apply self-start bg-transparent p-0 font-semibold text-brand;
+  }
 
   /* Awards + Fast/Live */
-  .bottom-grid { @apply grid grid-cols-1 gap-8 px-[5%] pb-16 pt-5 lg:grid-cols-[1.4fr_1fr_1fr]; }
-  .awards { @apply flex flex-col gap-3; }
-  .awards-poster { @apply relative aspect-video overflow-hidden rounded-xl bg-surface; }
-  .platform-badge { @apply absolute left-3 top-3 z-10 rounded bg-black/60 px-2.5 py-1 text-xs; }
-  .awards-title { @apply text-3xl font-bold; }
-  .awards-desc { @apply text-sm leading-relaxed text-gray-300; }
-  .small-col { @apply flex min-w-0 flex-col; }
-  .small-item { @apply mb-4 flex gap-3.5; }
-  .small-poster { @apply relative aspect-[2/3] w-[90px] flex-none overflow-hidden rounded-md bg-surface; }
-  .small-info { @apply flex min-w-0 flex-col gap-1; }
-  .small-title { @apply text-[15px] font-semibold; }
-  .live-dot { @apply ml-1.5 inline-block h-2 w-2 rounded-full bg-red-500; }
+  .bottom-grid {
+    @apply grid grid-cols-1 gap-8 px-[5%] pb-16 pt-5 lg:grid-cols-[1.4fr_1fr_1fr];
+  }
+  .awards {
+    @apply flex flex-col gap-3;
+  }
+  .awards-poster {
+    @apply relative aspect-video overflow-hidden rounded-xl bg-surface;
+  }
+  .platform-badge {
+    @apply absolute left-3 top-3 z-10 rounded bg-black/60 px-2.5 py-1 text-xs;
+  }
+  .awards-title {
+    @apply text-3xl font-bold;
+  }
+  .awards-desc {
+    @apply text-sm leading-relaxed text-gray-300;
+  }
+  .small-col {
+    @apply flex min-w-0 flex-col;
+  }
+  .small-item {
+    @apply mb-4 flex gap-3.5;
+  }
+  .small-poster {
+    @apply relative aspect-[2/3] w-[90px] flex-none overflow-hidden rounded-md bg-surface;
+  }
+  .small-info {
+    @apply flex min-w-0 flex-col gap-1;
+  }
+  .small-title {
+    @apply text-[15px] font-semibold;
+  }
+  .live-dot {
+    @apply ml-1.5 inline-block h-2 w-2 rounded-full bg-red-500;
+  }
 
   /* Footer */
-  .footer { @apply flex flex-col gap-8 border-t border-zinc-800 px-[5%] pb-6 pt-12; }
-  .footer-top { @apply flex flex-wrap justify-between gap-6; }
-  .footer-slogan { @apply max-w-md text-[28px] font-semibold leading-snug; }
-  .footer-right { @apply flex flex-col items-end gap-10; }
-  .footer-links { @apply text-gray-300; }
-  .social { @apply flex gap-3; }
-  .social-icon { @apply flex h-9 w-9 items-center justify-center rounded bg-white font-bold text-black; }
-  .footer-bottom { @apply flex flex-wrap justify-between gap-3 text-xs text-gray-400; }
-  .footer-bottom a { @apply mr-4 hover:text-white; }
+  .footer {
+    @apply flex flex-col gap-8 border-t border-zinc-800 px-[5%] pb-6 pt-12;
+  }
+  .footer-top {
+    @apply flex flex-wrap justify-between gap-6;
+  }
+  .footer-slogan {
+    @apply max-w-md text-[28px] font-semibold leading-snug;
+  }
+  .footer-right {
+    @apply flex flex-col items-end gap-10;
+  }
+  .footer-links {
+    @apply text-gray-300;
+  }
+  .social {
+    @apply flex gap-3;
+  }
+  .social-icon {
+    @apply flex h-9 w-9 items-center justify-center rounded bg-white font-bold text-black;
+  }
+  .footer-bottom {
+    @apply flex flex-wrap justify-between gap-3 text-xs text-gray-400;
+  }
+  .footer-bottom a {
+    @apply mr-4 hover:text-white;
+  }
 }
 
 /* Mobil (768px-dən kiçik): hamburger menyu, Featured kartları altda, alt sütunlar bir-birinin altında */
 @media (max-width: 768px) {
-  .burger { @apply block; }
-  .nav-links { @apply absolute inset-x-0 top-full hidden flex-col gap-4 bg-bg px-[5%] py-4; }
-  .nav-links.is-open { @apply flex; }
-  .footer-right { @apply items-start; }
+  .burger {
+    @apply block;
+  }
+  .nav-links {
+    @apply absolute inset-x-0 top-full hidden flex-col gap-4 bg-bg px-[5%] py-4;
+  }
+  .nav-links.is-open {
+    @apply flex;
+  }
+  .footer-right {
+    @apply items-start;
+  }
 }
