@@ -26,7 +26,7 @@ export default function useRowScroll(ref) {
       el.removeEventListener('scroll', update);
       window.removeEventListener('resize', update);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   // Ekranın 80%-i qədər sürüşdür

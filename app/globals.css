@@ -36,7 +36,7 @@
     @apply mt-1 text-[13px] text-gray-400;
   }
 
-  /* Navbar */
+
   .navbar {
     @apply fixed inset-x-0 top-0 z-50 flex items-center justify-between px-[5%] py-5 transition-colors duration-300;
   }
@@ -68,7 +68,7 @@
     @apply hidden bg-transparent text-xl text-white;
   }
 
-  /* Hero */
+
   .hero {
     @apply relative flex h-[80vh] min-h-[460px] items-end overflow-hidden;
   }
@@ -103,7 +103,7 @@
     @apply bg-white;
   }
 
-  /* Platformalar */
+
   .platform-section {
     @apply flex items-center gap-3 px-[5%] py-10;
   }
@@ -147,7 +147,7 @@
     @apply invisible;
   }
 
-  /* Film kartı */
+
   .movie-card {
     @apply cursor-pointer transition-transform duration-300 hover:scale-105;
   }
@@ -181,7 +181,7 @@
     @apply text-[15px] font-semibold;
   }
 
-  /* Featured */
+
   .featured {
     @apply relative grid min-h-[520px] grid-cols-1 items-center gap-10 overflow-hidden px-[5%] py-16 lg:grid-cols-[1fr_1.6fr];
   }
@@ -255,7 +255,7 @@
     @apply ml-1.5 inline-block h-2 w-2 rounded-full bg-red-500;
   }
 
-  /* Footer */
+
   .footer {
     @apply flex flex-col gap-8 border-t border-zinc-800 px-[5%] pb-6 pt-12;
   }
@@ -285,7 +285,7 @@
   }
 }
 
-/* Mobil (768px-dən kiçik): hamburger menyu, Featured kartları altda, alt sütunlar bir-birinin altında */
+/* Mobil*/
 @media (max-width: 768px) {
   .burger {
     @apply block;

@@ -1,4 +1,3 @@
-// Bölmə başlığı + sağdakı oxlar (children kimi gəlir). Bütün bölmələrdə təkrar istifadə olunur.
 // SliderArrows: canPrev/canNext false olanda ox gizlənir (visibility: hidden, yer tutur).
 export function SliderArrows({ onPrev, onNext, canPrev = true, canNext = true }) {
   return (

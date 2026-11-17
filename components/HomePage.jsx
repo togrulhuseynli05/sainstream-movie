@@ -6,8 +6,7 @@ import FeaturedSection from './home/FeaturedSection';
 import AwardsSlider from './home/AwardsSlider';
 import FastLiveColumn from './home/FastLiveColumn';
 
-// Ana səhifənin yığılması. Sıra design ilə eynidir.
-// Data props ilə gəlir: mockData-nı yalnız səhifə səviyyəsi (app/page.jsx və ya App.jsx) import edir.
+
 export default function HomePage({ data }) {
   return (
     <main>

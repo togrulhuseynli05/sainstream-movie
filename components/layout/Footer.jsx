@@ -1,6 +1,5 @@
 // Footer: sloqan, linklər, 4 sosial ikon, alt sətir. Stateless olduğu üçün 'use client' lazım deyil.
 const links = ['Home', 'Discover', 'Influence', 'Release'];
-// Sosial ikonlar hələlik hərflə göstərilib (placeholder) — Figma SVG-ləri ilə əvəz edə bilərsiniz
 const socials = [
   { label: 'Instagram', text: 'IG' },
   { label: 'Facebook', text: 'f' },

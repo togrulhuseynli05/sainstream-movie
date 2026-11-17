@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import Img from '../ui/Img';
+// import Img from '../ui/Img';
 import MovieCard from '../ui/MovieCard';
 import { formatDuration } from '../../utils/format';
 
@@ -20,7 +20,7 @@ export default function FeaturedSection({ movies }) {
   return (
     <section className="featured">
       {/* key: film dəyişəndə şəkil yenidən yüklənir */}
-      <Img key={movie.id} src={movie.backdropImage} alt="" className="featured-bg" sizes="100vw" />
+      {/* <Img key={movie.id} src={movie.backdropImage} alt="" className="featured-bg" sizes="100vw" /> */}
 
       <div className="featured-left">
         <h2 className="featured-title">Featured in SaintStream</h2>

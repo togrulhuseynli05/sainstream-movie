@@ -4,8 +4,7 @@ import MovieCard from '../ui/MovieCard';
 import SectionHeader, { SliderArrows } from '../ui/SectionHeader';
 import useRowScroll from '../../hooks/useRowScroll';
 
-// UNİVERSAL bölmə: Just Release, Movies, Series, Korean Series üçün eyni komponent.
-// Props: title və items. Konkret film adı bu faylda yoxdur.
+
 export default function MovieSection({ title, items }) {
   const rowRef = useRef(null);
   const { canPrev, canNext, scrollPrev, scrollNext } = useRowScroll(rowRef);

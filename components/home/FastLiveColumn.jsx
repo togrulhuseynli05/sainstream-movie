@@ -3,9 +3,9 @@ import { useState } from 'react';
 import Img from '../ui/Img';
 import SectionHeader, { SliderArrows } from '../ui/SectionHeader';
 
-const PER_PAGE = 4; // hər səhifədə 4 kart
+const PER_PAGE = 4; 
 
-// Fast və Live üçün EYNİ komponent. Oxlar növbəti/əvvəlki 4-lük qrupa keçir.
+//Oxlar növbəti/əvvəlki 4-lük qrupa keçir.
 export default function FastLiveColumn({ title, items, live = false }) {
   const [page, setPage] = useState(0);
   const pages = Math.ceil(items.length / PER_PAGE);

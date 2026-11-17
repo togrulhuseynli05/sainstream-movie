@@ -1,13 +1,18 @@
 {
   "name": "saintstream-next",
+  "homepage": "https://togrulhuseynli05.github.io/sainstream-movie",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prettier": "prettier --write .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "next": "14.2.5",
     "react": "18.3.1",
     "react-dom": "18.3.1",

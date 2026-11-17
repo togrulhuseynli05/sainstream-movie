@@ -28,7 +28,7 @@ export default function Navbar() {
             href="#"
             className={`nav-link ${active === l ? 'is-active' : ''}`}
             onClick={(e) => {
-              e.preventDefault(); // # linkinə getməsin
+              e.preventDefault();
               setActive(l);
               setMenuOpen(false);
             }}

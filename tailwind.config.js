@@ -4,9 +4,8 @@ module.exports = {
   content: ['./app/**/*.{js,jsx}', './components/**/*.{js,jsx}'],
   theme: {
     extend: {
-      // Figma rəngləri: arxa fon tünd, vurğu yaşıl, ulduz sarı
       colors: { bg: '#0b0c0f', surface: '#16171c', brand: '#14915a', star: '#facc15' },
     },
   },
-  plugins: [],
+  plugins: [], base: "./sainstream-movie/",
 };

@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import Img from '../ui/Img';
 import useRowScroll from '../../hooks/useRowScroll';
 
-// Platform loqoları yan-yana; sağdakı ox ilə üfüqi sürüşdürülür
+
 export default function PlatformRow({ platforms }) {
   const rowRef = useRef(null);
   const { scrollNext } = useRowScroll(rowRef);

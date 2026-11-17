@@ -1,9 +1,3 @@
-// Bütün məlumat burada. Komponentlər bunu props ilə alır.
-// Sabah API gələndə yalnız bu faylı fetch ilə əvəz etmək kifayətdir.
-
-// Hələlik bütün şəkillər üçün eyni test şəkli istifadə olunur.
-// Real şəkillər hazır olanda aşağıdakı sətri dəyişmək kifayətdir.
-// Fayl adı böyük-kiçik hərfə həssasdır: public/images/Thor_poster_02.webp
 const PLACEHOLDER_IMG = '/images/Thor_poster_02.webp';
 
 // Hero slider — 5 slayd
