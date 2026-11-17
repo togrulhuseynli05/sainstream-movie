@@ -1,5 +1,6 @@
 {
   "name": "saintstream-next",
+  "homepage": "https://sainstream-movie.vercel.app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
