@@ -2,6 +2,8 @@
 import { useState } from 'react';
 import Img from '../ui/Img';
 import SectionHeader, { SliderArrows } from '../ui/SectionHeader';
+import Link from 'next/link';
+import { detailHref } from '../../utils/links';
 
 const PER_PAGE = 4; 
 
@@ -22,7 +24,7 @@ export default function FastLiveColumn({ title, items, live = false }) {
       </SectionHeader>
 
       {visible.map((m) => (
-        <div key={m.id} className="small-item">
+        <Link key={m.id} href={detailHref(m)} className="small-item">
           <div className="small-poster">
             <Img src={m.posterImage} alt={`${m.title} posteri`} sizes="90px" />
           </div>
@@ -34,7 +36,7 @@ export default function FastLiveColumn({ title, items, live = false }) {
             </p>
             <p className="movie-card-meta">{m.genres.join(' • ')}</p>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

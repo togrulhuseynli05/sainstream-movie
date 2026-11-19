@@ -55,7 +55,7 @@ export const koreanSeries = [
 
 // Popular of the week — 1–4 sıra
 export const popularWeekMovies = [
-  { rank: 1, id: 'pw1', title: 'The Last Of Us', posterImage: PLACEHOLDER_IMG, ageRating: 'PG-13', genres: ['Horror', 'Thriller'], rating: 4.3, type: 'Movie' },
+  { rank: 1, id: 'tlou', title: 'The Last Of Us', posterImage: PLACEHOLDER_IMG, ageRating: 'PG-13', genres: ['Horror', 'Thriller'], rating: 4.3, type: 'Series'},
   { rank: 2, id: 'pw2', title: 'Sri Asih', posterImage: PLACEHOLDER_IMG, ageRating: 'PG-13', genres: ['Superhero', 'Action'], rating: 4.9, type: 'Movie' },
   { rank: 3, id: 'pw3', title: 'The Flash', posterImage: PLACEHOLDER_IMG, ageRating: 'PG-13', genres: ['Comedy', 'Action'], rating: 3.7, type: 'Movie' },
   { rank: 4, id: 'pw4', title: 'Oppenheimer', posterImage: PLACEHOLDER_IMG, ageRating: 'PG-13', genres: ['Comedy', 'Action'], rating: 4.4, type: 'Movie' },
@@ -98,3 +98,63 @@ export const liveMovies = [
   { id: 'li7', title: 'Weak Hero', posterImage: PLACEHOLDER_IMG, ageRating: 'PG-13', genres: ['Action', 'Drama'], rating: 4.6, type: 'Series' },
   { id: 'li8', title: "Satan's slaves", posterImage: PLACEHOLDER_IMG, ageRating: 'PG-13', genres: ['Horror'], rating: 4.6, type: 'Movie' },
 ];
+
+// ===== FTP-008: Detay səhifəsi üçün data =====
+
+// Serial üçün 9 epizod (Season 1). progressPercent progress bar-ın genişliyini təyin edir.
+const tlouEpisodes = Array.from({ length: 9 }, (_, i) => ({
+  id: `tlou-s1-e${i + 1}`,
+  seasonId: 's1',
+  chapterNumber: i + 1,
+  description: 'The chapter about Joel and Ellie who just want to go out from the palace to get freedom...',
+  thumbnail: PLACEHOLDER_IMG,
+  watchedDuration: '34:05',
+  remainingDuration: '00:57:45',
+  progressPercent: [60, 45, 75, 30, 90, 0, 0, 0, 0][i],
+}));
+
+// Detay səhifəsi üçün tam məlumat. Hazırda yalnız The Last Of Us tam yazılıb.
+export const movieDetails = [
+  {
+    id: 'tlou',
+    type: 'series',
+    title: 'The Last Of Us Season 1',
+    backgroundImage: PLACEHOLDER_IMG,
+    badge: 'Series',
+    episodeCount: 9,
+    year: 2022,
+    genres: ['Fantasy', 'Action'],
+    continueWatchingProgress: 34,
+    storyline:
+      'The Last of Us is an American post-apocalyptic drama television series created by Craig Mazin and Neil Druckmann for HBO. Based on the 2013 video game developed by Naughty Dog, the series is set in 2023, twenty years into a pandemic caused by a mass fungal infection, which causes its hosts to transform into zombie-like creatures and collapses society. The series follows Joel (Pedro Pascal), a smuggler tasked with escorting the immune teenager Ellie (Bella Ramsey) across a post-apocalyptic United States.',
+    cast: [
+      { id: 'c1', actorName: 'Pedro Pascal', characterName: 'Joel Miller', photo: PLACEHOLDER_IMG },
+      { id: 'c2', actorName: 'Bella Ramsey', characterName: 'Ellie', photo: PLACEHOLDER_IMG },
+      { id: 'c3', actorName: 'Anna Torv', characterName: 'Tessa', photo: PLACEHOLDER_IMG },
+      { id: 'c4', actorName: 'Ashley Johnson', characterName: 'Ellie Mother', photo: PLACEHOLDER_IMG },
+      { id: 'c5', actorName: 'Nick Offerman', characterName: 'Bill', photo: PLACEHOLDER_IMG },
+      { id: 'c6', actorName: 'Nico Parker', characterName: 'Sarah Miller', photo: PLACEHOLDER_IMG },
+      { id: 'c7', actorName: 'Murray Bartlett', characterName: 'Frank', photo: PLACEHOLDER_IMG },
+    ],
+    seasons: [
+      { id: 's1', label: 'Season 1' },
+      { id: 's2', label: 'Season 2' },
+    ],
+    episodes: tlouEpisodes,
+    similarMovieIds: ['sm1', 'sm2', 'sm3', 'sm4', 'sm5'],
+  },
+];
+
+// Oxşar filmlər (Similar Movies bölməsi üçün)
+export const similarMovies = [
+  { id: 'sm1', title: 'TOP GUN: Maverick', posterImage: PLACEHOLDER_IMG, type: 'Movie', rating: 4.6, genres: ['Action'] },
+  { id: 'sm2', title: 'Spider-Man: Into the Spider-Verse', posterImage: PLACEHOLDER_IMG, type: 'Movie', rating: 4.6, genres: ['Action'] },
+  { id: 'sm3', title: 'Black Panther: Wakanda Forever', posterImage: PLACEHOLDER_IMG, type: 'Movie', rating: 4.6, genres: ['Action'] },
+  { id: 'sm4', title: 'Batman v Superman', posterImage: PLACEHOLDER_IMG, type: 'Movie', rating: 4.6, genres: ['Action'] },
+  { id: 'sm5', title: 'Red Notice', posterImage: PLACEHOLDER_IMG, type: 'Movie', rating: 4.6, genres: ['Action'] },
+];
+
+// Route-dan gələn type və id ilə detalı tapır. Tapılmasa undefined qaytarır.
+export function getMovieDetail(type, id) {
+  return movieDetails.find((m) => m.type === type && m.id === id);
+}
