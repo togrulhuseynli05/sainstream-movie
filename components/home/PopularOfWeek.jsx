@@ -3,6 +3,8 @@ import { useRef } from 'react';
 import Img from '../ui/Img';
 import SectionHeader, { SliderArrows } from '../ui/SectionHeader';
 import useRowScroll from '../../hooks/useRowScroll';
+import Link from 'next/link';
+import { detailHref } from '../../utils/links';
 
 // Həftənin ən populyar filmləri: böyük rəqəm + poster + PG-13 + məlumat
 export default function PopularOfWeek({ items }) {
@@ -16,7 +18,7 @@ export default function PopularOfWeek({ items }) {
       </SectionHeader>
       <div className="row" ref={rowRef}>
         {items.map((m) => (
-          <div key={m.id} className="popular-item">
+          <Link key={m.id} href={detailHref(m)} className="popular-item">
             <span className="popular-rank">{m.rank}</span>
             <div className="popular-poster">
               <Img src={m.posterImage} alt={`${m.title} posteri`} sizes="90px" />
@@ -29,7 +31,7 @@ export default function PopularOfWeek({ items }) {
                 <span className="star">★</span> {m.rating} | {m.type}
               </p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

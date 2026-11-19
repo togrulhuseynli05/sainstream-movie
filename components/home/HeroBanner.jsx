@@ -20,7 +20,7 @@ export default function HeroBanner({ movies }) {
 
   return (
     <section className="hero">
-      <Img src={movie.backdropImage} alt={movie.title} sizes="100vw" />
+      <Img src={movie.backdropImage} alt={movie.title} sizes="100vw" priority={index === 0} />
       <div className="hero-overlay" />
 
       <div className="hero-content">
