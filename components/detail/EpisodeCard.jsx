@@ -1,6 +1,6 @@
 import Img from '../ui/Img';
 
-// Bir epizod kartı: arxa fon, Chapter nömrəsi, açıqlama, progress bar və müddətlər
+
 export default function EpisodeCard({ episode }) {
   return (
     <div className="overflow-hidden rounded-xl bg-surface">

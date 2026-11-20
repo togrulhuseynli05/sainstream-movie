@@ -4,7 +4,7 @@ import MovieCard from '../ui/MovieCard';
 import SectionHeader, { SliderArrows } from '../ui/SectionHeader';
 import useRowScroll from '../../hooks/useRowScroll';
 
-// Oxşar filmlər: mövcud MovieCard yenidən istifadə olunur
+
 export default function SimilarMovies({ movies }) {
   const rowRef = useRef(null);
   const { canPrev, canNext, scrollPrev, scrollNext } = useRowScroll(rowRef);

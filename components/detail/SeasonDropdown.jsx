@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-// Sezon seçimi: düyməyə klik edəndə siyahı açılır. Seçim üst komponentə (EpisodeList) göndərilir.
+
 export default function SeasonDropdown({ seasons, value, onChange }) {
   const [open, setOpen] = useState(false);
   const current = seasons.find((s) => s.id === value);

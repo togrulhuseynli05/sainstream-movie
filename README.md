@@ -2,7 +2,7 @@
 
 Film və serial platforması üçün ana səhifə və detay səhifəsinin **Next.js (App Router)** və **Tailwind CSS** ilə qurulmuş versiyası. Dizayn Figma ekranlarına əsaslanır. Bütün məlumat mock fayldan gəlir, API hələ qoşulmayıb.
 
-**Canlı demo:** [VERCEL_LINKINIZI_BURAYA_YAZIN](https://vercel.com/togrul2/sainstream-movie)
+**Canlı demo:** [https://sainstream-movie.vercel.app/](https://sainstream-movie.vercel.app/)
 
 ---
 

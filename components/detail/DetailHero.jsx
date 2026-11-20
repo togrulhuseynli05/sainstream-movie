@@ -1,9 +1,8 @@
 import Img from '../ui/Img';
 import { formatDuration } from '../../utils/format';
 
-// Hero: arxa fon, etiket, ad, metadata və düymələr
+
 export default function DetailHero({ detail }) {
-  // Serial üçün epizod sayı, film üçün müddət göstərilir
   const length =
     detail.type === 'series' ? `${detail.episodeCount} Episodes` : formatDuration(detail.durationMinutes);
 

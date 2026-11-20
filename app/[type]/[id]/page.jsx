@@ -12,7 +12,6 @@ export function generateStaticParams() {
 }
 
 export default async function DetailPage({ params }) {
-  // Next 14-də params obyektdir, Next 15+-da Promise. await hər ikisində işləyir.
   const { type, id } = await params;
   const detail = getMovieDetail(type, id);
 

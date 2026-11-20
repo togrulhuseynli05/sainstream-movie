@@ -99,7 +99,6 @@ export const liveMovies = [
   { id: 'li8', title: "Satan's slaves", posterImage: PLACEHOLDER_IMG, ageRating: 'PG-13', genres: ['Horror'], rating: 4.6, type: 'Movie' },
 ];
 
-// ===== FTP-008: Detay səhifəsi üçün data =====
 
 // Serial üçün 9 epizod (Season 1). progressPercent progress bar-ın genişliyini təyin edir.
 const tlouEpisodes = Array.from({ length: 9 }, (_, i) => ({
@@ -113,7 +112,7 @@ const tlouEpisodes = Array.from({ length: 9 }, (_, i) => ({
   progressPercent: [60, 45, 75, 30, 90, 0, 0, 0, 0][i],
 }));
 
-// Detay səhifəsi üçün tam məlumat. Hazırda yalnız The Last Of Us tam yazılıb.
+// Detay səhifəsi üçün tam məlumat.The Last Of Us
 export const movieDetails = [
   {
     id: 'tlou',
@@ -145,7 +144,7 @@ export const movieDetails = [
   },
 ];
 
-// Oxşar filmlər (Similar Movies bölməsi üçün)
+
 export const similarMovies = [
   { id: 'sm1', title: 'TOP GUN: Maverick', posterImage: PLACEHOLDER_IMG, type: 'Movie', rating: 4.6, genres: ['Action'] },
   { id: 'sm2', title: 'Spider-Man: Into the Spider-Verse', posterImage: PLACEHOLDER_IMG, type: 'Movie', rating: 4.6, genres: ['Action'] },
