@@ -36,7 +36,7 @@ Desktop ilə tablet görünüşü demək olar ki eynidir.
 ![Movies, Series və Korean Series](docs/screenshots/16-sections.png)
 ![Movies On Awards](docs/screenshots/17-bottom-grid-1.png)
 ![Fast və Live](docs/screenshots/18-bottom-grid-2.png)
-![Footer](docs/screenshots/10-footer-end.png)
+![Footer](docs/screenshots/19-footer-end.png)
 ![404 Found](docs/screenshots/20-404-not-found.png)
 ---
 
