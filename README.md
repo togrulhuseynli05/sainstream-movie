@@ -94,6 +94,7 @@ Detay səhifəsi (`/series/tlou`) hələ `data/mockData.js`-dəki məlumatla iş
 ## Marşrutlar
 
 | Ünvan | Nə göstərir |
+| --- | --- |
 | `/` | Ana səhifə (TMDB məlumatı ilə) |
 | `/series/tlou` | The Last Of Us Season 1 detayı |
 | TMDB kartları (`/movie/{id}`, `/series/{id}`) | Hazırda 404. Detay datası yalnız `tlou` üçün var |
@@ -108,7 +109,7 @@ Detay səhifəsi (`/series/tlou`) hələ `data/mockData.js`-dəki məlumatla iş
 - JavaScript (TypeScript istifadə olunmur)
 
 ## Qovluq strukturu
-
+```
 saintstream-next/
 ├── .next/                          # Next.js build cache (Git-ə göndərilmir)
 ├── app/
@@ -169,6 +170,7 @@ saintstream-next/
 ├── postcss.config.js
 ├── README.md
 └── tailwind.config.js
+```
 ## Quraşdırma
 
 **Tələblər:** Node.js 18.17 və ya daha yeni (tövsiyə olunan: 20 LTS) və npm.
