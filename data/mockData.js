@@ -1,6 +1,5 @@
 const PLACEHOLDER_IMG = '/images/Thor_poster_02.webp';
 
-// Hero slider — 5 slayd
 export const heroMovies = [
   { id: 'h1', type: 'Movie', title: 'Star Wars: The Force Awakens', releaseYear: 2023, durationMinutes: 160, genres: ['Fantasy', 'Action'], description: 'The third season of the American television series The Mandalorian stars Pedro Pascal as the title character...', backdropImage: PLACEHOLDER_IMG, trailerUrl: 'https://www.youtube.com/' },
   { id: 'h2', type: 'Movie', title: 'Air; Courting A Legend', releaseYear: 2022, durationMinutes: 160, genres: ['Superhero', 'Action'], description: 'Placeholder: Figma-dakı real təsviri bura yazın.', backdropImage: PLACEHOLDER_IMG, trailerUrl: 'https://www.youtube.com/' },
@@ -9,7 +8,6 @@ export const heroMovies = [
   { id: 'h5', type: 'Movie', title: 'The Flash', releaseYear: 2023, durationMinutes: 144, genres: ['Action', 'Superhero'], description: 'Placeholder: Figma-dakı real təsviri bura yazın.', backdropImage: PLACEHOLDER_IMG, trailerUrl: 'https://www.youtube.com/' },
 ];
 
-// Platform loqoları
 export const platforms = [
   { id: 'p1', name: 'Disney', logoUrl: PLACEHOLDER_IMG },
   { id: 'p2', name: 'Netflix', logoUrl: PLACEHOLDER_IMG },
@@ -20,7 +18,6 @@ export const platforms = [
   { id: 'p7', name: 'National Geographic', logoUrl: PLACEHOLDER_IMG },
 ];
 
-// Kart sıraları — hamısı eyni formadadır (MovieCard üçün)
 export const justRelease = [
   { id: 'jr1', title: 'Enola Holmes 2', posterImage: PLACEHOLDER_IMG, type: 'Movie', rating: 4.8, genres: ['Action'] },
   { id: 'jr2', title: "Satan's slaves", posterImage: PLACEHOLDER_IMG, type: 'Movie', rating: 4.6, genres: ['Horror'] },
@@ -53,7 +50,6 @@ export const koreanSeries = [
   { id: 'k5', title: 'The Pirates: The Last Royal Treasure', posterImage: PLACEHOLDER_IMG, type: 'Series', rating: 4.6, genres: ['Action'] },
 ];
 
-// Popular of the week — 1–4 sıra
 export const popularWeekMovies = [
   { rank: 1, id: 'tlou', title: 'The Last Of Us', posterImage: PLACEHOLDER_IMG, ageRating: 'PG-13', genres: ['Horror', 'Thriller'], rating: 4.3, type: 'Series'},
   { rank: 2, id: 'pw2', title: 'Sri Asih', posterImage: PLACEHOLDER_IMG, ageRating: 'PG-13', genres: ['Superhero', 'Action'], rating: 4.9, type: 'Movie' },
@@ -61,7 +57,6 @@ export const popularWeekMovies = [
   { rank: 4, id: 'pw4', title: 'Oppenheimer', posterImage: PLACEHOLDER_IMG, ageRating: 'PG-13', genres: ['Comedy', 'Action'], rating: 4.4, type: 'Movie' },
 ];
 
-// Featured — sağdakı kartlar; ilk film defolt seçilir
 export const featuredMovies = [
   { id: 'f1', title: 'Air; Courting A Legend', tagline: '#1 in Australia', rating: 4.6, durationMinutes: 160, releaseYear: 2022, genres: ['Superhero', 'Action'], description: 'When international arms dealer and criminal mastermind Elena Federova orchestrates seven simultaneous New York City bank heists, an outcast agent must act.', posterImage: PLACEHOLDER_IMG, backdropImage: PLACEHOLDER_IMG },
   { id: 'f2', title: 'The Last Of Us', tagline: 'Trending now', rating: 4.6, durationMinutes: 60, releaseYear: 2023, genres: ['Mystery', 'Drama'], description: 'Twenty years after a fungal outbreak, a hardened survivor is hired to smuggle a girl across a ravaged America.', posterImage: PLACEHOLDER_IMG, backdropImage: PLACEHOLDER_IMG },
@@ -69,14 +64,12 @@ export const featuredMovies = [
   { id: 'f4', title: 'Enola Holmes 2', tagline: 'Trending now', rating: 4.8, durationMinutes: 129, releaseYear: 2022, genres: ['Action', 'Mystery'], description: 'Enola Holmes teams up with Sherlock to track down a missing girl and uncover a dangerous match factory plot.', posterImage: PLACEHOLDER_IMG, backdropImage: PLACEHOLDER_IMG },
 ];
 
-// Movies On Awards — dairəvi slider
 export const awardsMovies = [
   { id: 'a1', title: 'Gundala', platformName: 'Prime Video', platformLogo: PLACEHOLDER_IMG, label: 'Best Pictures', rating: 4.6, durationMinutes: 124, releaseYear: 2022, genres: ['Superhero', 'Action'], description: 'An Indonesian hero is born in a rain-soaked city, gaining lightning powers to fight corruption and crime.', backdropImage: PLACEHOLDER_IMG },
   { id: 'a2', title: 'Enola Holmes 2', platformName: 'Netflix', platformLogo: PLACEHOLDER_IMG, label: 'Best Pictures', rating: 4.8, durationMinutes: 129, releaseYear: 2022, genres: ['Action', 'Mystery'], description: 'Enola Holmes teams up with Sherlock to track down a missing girl and uncover a dangerous plot.', backdropImage: PLACEHOLDER_IMG },
   { id: 'a3', title: 'The Last Of Us', platformName: 'HBO Max', platformLogo: PLACEHOLDER_IMG, label: 'Best Pictures', rating: 4.6, durationMinutes: 60, releaseYear: 2023, genres: ['Mystery', 'Drama'], description: 'A hardened survivor is hired to smuggle a girl across a ravaged America.', backdropImage: PLACEHOLDER_IMG },
 ];
 
-// Fast və Live — hər biri 8 element (oxla 4-4 keçilir)
 export const fastMovies = [
   { id: 'fa1', title: 'Oppenheimer', posterImage: PLACEHOLDER_IMG, ageRating: 'PG-13', genres: ['Comedy', 'Action'], rating: 4.9, type: 'Movie' },
   { id: 'fa2', title: 'The End Movie', posterImage: PLACEHOLDER_IMG, ageRating: 'PG-13', genres: ['Comedy', 'Action'], rating: 4.8, type: 'Movie' },

@@ -1,4 +1,3 @@
-// Footer: sloqan, linklər, 4 sosial ikon, alt sətir. Stateless olduğu üçün 'use client' lazım deyil.
 const links = ['Home', 'Discover', 'Influence', 'Release'];
 const socials = [
   { label: 'Instagram', text: 'IG' },

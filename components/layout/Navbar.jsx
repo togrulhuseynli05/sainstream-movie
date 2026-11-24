@@ -1,4 +1,4 @@
-'use client'; // useState / useEffect var, ona görə client komponentdir (Next.js üçün)
+'use client';
 import { useEffect, useState } from 'react';
 
 const links = ['Home', 'Discover', 'Movie Release', 'Forum', 'About'];

@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Tailwind "komponent" sinifləri: utility-ləri @apply ilə bir addan qruplaşdırırıq.
-   JSX-də className="btn btn-primary" kimi istifadə olunur. */
-
 @layer base {
   body {
     @apply bg-bg font-sans text-white antialiased;

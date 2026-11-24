@@ -3,7 +3,6 @@ import { useRef } from 'react';
 import Img from '../ui/Img';
 import useRowScroll from '../../hooks/useRowScroll';
 
-
 export default function PlatformRow({ platforms }) {
   const rowRef = useRef(null);
   const { scrollNext } = useRowScroll(rowRef);

@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // Tailwind bu fayllardakı className-ləri oxuyur
   content: ['./app/**/*.{js,jsx}', './components/**/*.{js,jsx}'],
   theme: {
     extend: {

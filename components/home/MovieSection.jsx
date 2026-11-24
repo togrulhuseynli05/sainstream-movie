@@ -4,7 +4,6 @@ import MovieCard from '../ui/MovieCard';
 import SectionHeader, { SliderArrows } from '../ui/SectionHeader';
 import useRowScroll from '../../hooks/useRowScroll';
 
-
 export default function MovieSection({ title, items }) {
   const rowRef = useRef(null);
   const { canPrev, canNext, scrollPrev, scrollNext } = useRowScroll(rowRef);

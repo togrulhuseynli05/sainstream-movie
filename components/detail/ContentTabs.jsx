@@ -4,7 +4,7 @@ import EpisodeList from './EpisodeList';
 
 const TABS = ['Episode', 'Universe', 'News', 'Reviews'];
 
-// Tablar: aktiv tabın altında yaşıl xətt. Hazırda yalnız Episode tabının məzmunu var.
+//aktiv tabın altında yaşıl xətt
 export default function ContentTabs({ seasons, episodes }) {
   const [activeTab, setActiveTab] = useState('Episode');
 

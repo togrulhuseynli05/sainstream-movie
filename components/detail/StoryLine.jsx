@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-// Story Line: mətn 3 sətrə qısalır. "More" tam mətni açır, "Less" yenidən qısaldır.
+//"More" tam mətni açır, "Less" yenidən qısaldır.
 export default function StoryLine({ text }) {
   const [isExpanded, setIsExpanded] = useState(false);
 

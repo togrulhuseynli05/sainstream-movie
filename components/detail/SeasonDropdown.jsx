@@ -1,7 +1,6 @@
 'use client';
 import { useState } from 'react';
 
-
 export default function SeasonDropdown({ seasons, value, onChange }) {
   const [open, setOpen] = useState(false);
   const current = seasons.find((s) => s.id === value);
@@ -31,9 +30,8 @@ export default function SeasonDropdown({ seasons, value, onChange }) {
                   onChange(s.id);
                   setOpen(false);
                 }}
-                className={`w-full px-4 py-2 text-left text-sm hover:bg-brand/30 ${
-                  s.id === value ? 'text-brand' : ''
-                }`}
+                className={`w-full px-4 py-2 text-left text-sm hover:bg-brand/30 ${s.id === value ? 'text-brand' : ''
+                  }`}
               >
                 {s.label}
               </button>

@@ -4,7 +4,7 @@ import Img from '../ui/Img';
 import SectionHeader, { SliderArrows } from '../ui/SectionHeader';
 import useRowScroll from '../../hooks/useRowScroll';
 
-// Top Cast: dairəvi aktyor şəkilləri horizontal sürüşür
+//dairəvi aktyor şəkilləri horizontal sürüşür
 export default function TopCast({ cast }) {
   const rowRef = useRef(null);
   const { canPrev, canNext, scrollPrev, scrollNext } = useRowScroll(rowRef);
